@@ -1,0 +1,21 @@
+#dancing-list li {
+    position: relative;
+    animation: dance 2s infinite;
+    color: blueviolet;
+
+    list-style: none;
+}
+
+@keyframes dance {
+    25% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    125% {
+        transform: rotate(0deg);
+    }
+}

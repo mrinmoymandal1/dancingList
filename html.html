@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="dancing-list">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Guava</li>
+    </ul>
+    <script>// add an item to the list
+        function addItem(text) {
+            var li = document.createElement("li");
+            li.innerText = text;
+            document.getElementById("dancing-list").appendChild(li);
+        }
+
+        // remove an item from the list
+        function removeItem(index) {
+            var list = document.getElementById("dancing-list");
+            var item = list.getElementsByTagName("li")[index];
+            list.removeChild(item);
+        }
+    </script>
+</body>
+
+</html>
